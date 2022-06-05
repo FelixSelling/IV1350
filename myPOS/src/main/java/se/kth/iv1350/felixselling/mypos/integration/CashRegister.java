@@ -11,6 +11,24 @@ public class CashRegister {
     }
 
     /**
+     * Constructor for CashRegister
+     * 
+     * @param cash Initial cash balance of cash register.
+     */
+    public CashRegister(double cash) {
+        this.cash = cash;
+    }
+
+    /**
+     * Get method.
+     * 
+     * @return The cash balance of cash register.
+     */
+    public double getCash() {
+        return cash;
+    }
+
+    /**
      * Method that adds cash to the register.
      * 
      * @param cash The amount of cash to add.
