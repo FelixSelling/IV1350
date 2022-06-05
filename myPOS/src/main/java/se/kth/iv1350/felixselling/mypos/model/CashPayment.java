@@ -18,6 +18,24 @@ public class CashPayment {
     }
 
     /**
+     * Getter method.
+     * 
+     * @return Total price incuding VAT of instace.
+     */
+    public double getTotalIncVat() {
+        return totalIncVat;
+    }
+
+    /**
+     * Getter method.
+     * 
+     * @return Cash paid in instance.
+     */
+    public double getCashPaid() {
+        return cashPaid;
+    }
+
+    /**
      * Method to register new payment.
      * 
      * @param cashAmount The amount of cash that was paid.
@@ -37,4 +55,3 @@ public class CashPayment {
         return cashPaid - totalIncVat;
     }
 }
-
