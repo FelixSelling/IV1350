@@ -24,7 +24,7 @@ public class CashPaymentTest {
         double expected = 1000;
         cashPaymentOf5000.registerPayment(1000);
         double actual = cashPaymentOf5000.getCashPaid();
-        assertEquals(expected, actual, "CashRegisters cash balance and expected cash balance not equal.");
+        assertEquals(expected, actual, "Expected registered payment and actual payment not equal.");
     }
 
     @Test
@@ -32,6 +32,6 @@ public class CashPaymentTest {
         double expected = 6000 - 5000;
         cashPaymentOf5000.registerPayment(6000);
         double actual = cashPaymentOf5000.getChange();
-        assertEquals(expected, actual, "CashRegisters cash balance and expected cash balance not equal.");
+        assertEquals(expected, actual, "Expected change and actual change not equal.");
     }
 }
